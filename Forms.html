@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+        <link rel="stylesheet" href="style.css  ">
+    </head>
+    <body>
+        <form action="/index.php" method="post">
+            <div class="container">
+                <header>
+                    <img src="the-form.gif" alt="form">
+                    <h1>FORM</h1>
+                </header>
+                <br>
+                <!-- Text Input -->
+                <label for="username"><b>Name:</b></label>
+                <input type="text" required id="username" name="text_input" placeholder="Enter text">
+
+                <br>
+
+                <!-- Button -->
+                <button type="button" class="button">Button</button>
+
+                <br>
+
+                <br>
+
+                <!-- Radio Buttons -->
+                <label><b>Gender:</b></label>
+                <input type="radio" id="radio_option1" name="radio_group" value="option1">
+                <label for="radio_option1">Male</label>
+                <input type="radio" id="radio_option2" name="radio_group" value="option2">
+                <label for="radio_option2">Female</label>
+
+                <br><br>
+
+                <!-- Checkbox -->
+                <input type="checkbox" id="checkbox" name="checkbox" value="checked">
+                <label for="checkbox"><b>Check me</b></label>
+
+                <br><br>
+
+                <!-- Date Input -->
+                <label for="date_input"><b>Date:</b></label>
+                <input type="date" id="date_input" name="date_input">
+
+                <br>
+
+                <!-- Time Input -->
+                <label for="time_input"><b>Time:</b></label>
+                <input type="time" id="time_input" name="time_input">
+
+                <br>
+
+                <!-- Datetime-local Input -->
+                <label for="datetime_input"><b>Datetime-local:</b></label>
+                <input type="datetime-local" id="datetime_input" name="datetime_input">
+
+                <br><br>
+
+                <!-- Tel Input -->
+                <label for="tel_input"><b>Tel:</b></label>
+                <input type="tel" id="tel_input" name="tel_input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+91 123-456-7890">
+
+                <br>
+
+                <!-- Email Input -->
+                <label for="email_input"><b>Email:</b></label>
+                <input type="email" id="email_input" name="email_input" placeholder="user@example.com">
+
+                <br>
+
+                <!-- Password Input -->
+                <label for="password"><b>Password:</b></label>
+                <input type="password" id="password" name="password" minlength="8">
+
+                <br>
+
+                <!-- URL Input -->
+                <label for="url_input"><b>URL:</b></label>
+                <input type="url" id="url_input" name="url_input" placeholder="https://example.com">
+
+                <br>
+
+                <!-- File Input -->
+                <label for="file_input"><b>File:</b></label>
+                <input type="file" id="file_input" name="file_input">
+
+                <br><br>
+
+                <!-- Image Input -->
+                <label for="image_input"><b>Image:</b></label>
+                <input type="image" id="image_input" src="path/to/image.jpg" alt="Submit">
+
+                <br><br>
+
+                <!-- Search Input -->
+                <label for="search_input"><b>Search:</b></label>
+                <input type="search" id="search_input" name="search_input" placeholder="Search...">
+
+                <br><br>
+
+                <!-- Month Input -->
+                <label for="month_input"><b>Month:</b></label>
+                <input type="month" id="month_input" name="month_input">
+
+                <br>
+
+                <!-- Week Input -->
+                <label for="week_input"><b>Week:</b></label>
+                <input type="week" id="week_input" name="week_input">
+
+                <br>
+
+                <!-- Number Input -->
+                <label for="number_input"><b>Number:</b></label>
+                <input type="number" id="number_input" name="number_input">
+
+                <br>
+
+                <!-- Range Input -->
+                <label for="range_input"><b>Range:</b></label>
+                <input type="range" id="range_input" name="range_input" min="0" max="100">
+
+                <br><br>
+
+                <!-- Reset Button -->
+                <input type="reset" value="Reset">
+
+                <br><br>
+
+                <!-- Color Input -->
+                <label for="color_input"><b>Color:</b></label>
+                <input type="color" id="color_input" name="color_input">
+
+                <br>
+
+                <!-- Hidden Input -->
+                <input type="hidden" name="hidden_input" value="hidden_value">  
+
+                <br>
+
+                <!-- Submit Button -->
+                <input type="submit" class="button" value="Submit">
+            </div>
+        </form>
+
+    </body>
+</html>
